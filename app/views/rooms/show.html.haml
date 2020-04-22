@@ -1,3 +1,10 @@
-%h1 Chat Room
-%div#messages
-  =render @messages
+.container
+  %h1 Chat Room
+  %form.form-inline
+    .form-group
+      %input(type="text" class= "form-control" id="chat-input")
+      %button#button.btn.btn-primary submit
+  %div#messages
+    %ul.list-group
+      =render @messages
+
